@@ -1,4 +1,4 @@
-const { propertyOrdering, selectorOrdering } = require('stylelint-semantic-groups');
+const {propertyOrdering, selectorOrdering} = require('stylelint-semantic-groups');
 
 
 module.exports = {

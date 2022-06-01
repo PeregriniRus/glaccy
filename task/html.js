@@ -5,17 +5,17 @@ const size = require("gulp-size");
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
 // const htmlmin
-const htmlBeautify =require("gulp-html-beautify");
+const htmlBeautify = require("gulp-html-beautify");
 
 // Конфигурация
-const path=require("../config/path");
-const app=require("../config/app");
+const path = require("../config/path");
+const app = require("../config/app");
 
 //Обработка HTML
 const buildHtml = () => {
   return src(path.html.src)
     .pipe(plumber({
-      errorHandler: notify.onError(error =>({
+      errorHandler: notify.onError(error => ({
         title: "HTML",
         message: error.message
       }))

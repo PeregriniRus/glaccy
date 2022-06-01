@@ -24,7 +24,7 @@ const img = () => {
       imagemin.svgo(app.svgOptions),
       imagemin.mozjpeg(app.jpegOptions),
       imagemin.optipng()
-    ],app.imagemin))
+    ], app.imagemin))
     .pipe(dest(path.img.dest))
 }
 module.exports = img;

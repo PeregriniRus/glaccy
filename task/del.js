@@ -1,6 +1,6 @@
-const del =require("del");
+const del = require("del");
 // Конфигурация
-const path=require("../config/path");
+const path = require("../config/path");
 
 // Удаление директории
 const clear = () => {
