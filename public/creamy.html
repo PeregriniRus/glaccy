@@ -12,45 +12,79 @@
 <!----------------------------- Шапка главной страницы -------------->
 <header class="page-header">
   <nav class="page-header__nav nav">
-    <a class="nav__logo logo">
-      <img class="logo_img"
-           src="img/logo-glaccy.svg"
-           width="137"
-           height="56"
-           alt="Логотип интернет магазина Глейси.">
-      <ul class="nav__menu menu">
-        <li class="menu__item">
-          <a class="menu__link text--small-height"
-             href="#">Каталог</a>
+  <a class="nav__logo logo" href="index.html">
+    <img class="logo_img" src="img/logo-glaccy.svg" width="137" height="56" alt="Логотип интернет магазина Глейси.">
+  </a>
+  <ul class="nav__menu menu">
+    <li class="menu__item">
+      <a class="menu__link" href="#">Каталог</a>
+      <ul class="submenu">
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Новинки</a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link text--small-height"
-             href="#">Доставка и оплата</a>
+        <li class="submenu__item">
+          <a class="submenu__link" href="creamy.html">Сливочное</a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link text--small-height"
-             href="#">О компании</a>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Щербеты</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Фруктовый лед</a>
+        </li>
+        <li class="submenu__item">
+          <a class="submenu__link" href="#">Мелорин</a>
         </li>
       </ul>
-    </a>
-  </nav>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link" href="#">Доставка и оплата</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link" href="#">О компании</a>
+    </li>
+  </ul>
+</nav>
+
   <address class="page-header__address">
     <a class="page-footer__phone"
        href="tel:+78005558628">+7 800 555-86-28</a>
   </address>
   <ul class="user-menu">
-    <li class="user-menu__item">
-      <a class="user-menu__link">Поиск по сайту</a>
-    </li>
-    <li class="user-menu__item">
-      <a class="user-menu__link"
-         href="">Вход</a>
-    </li>
-    <li class="user-menu__item">
-      <a class="user-menu__link"
-         href="">Корзина</a>
-    </li>
-  </ul>
+  <li class="user-menu__item header-search">
+    <a class="user-menu__link header-search__link"><span class="visually-hidden">Поиск по сайту</span></a>
+    <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+      <input class="header-search__input" name="header-search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту.">
+    </form>
+  </li>
+  <li class="user-menu__item header-login">
+    <a class="user-menu__link header-login__link" href="#">Вход</a>
+    <div class="wrapper--header-login__form">
+      <form class="user-block" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+        <h3 class="user-block__title">Личный кабинет</h3>
+        <label class="visually-hidden" for="email">Поле для ввода логина</label>
+        <input class="user-block__input" id="email" type="email" placeholder="email@example.com">
+        <label class="visually-hidden" for="password">Поле для ввода пароля</label>
+        <input class="user-block__input" id="password" type="password" placeholder="Пароль">
+        <button class="user-block__button" type="submit">Войти</button>
+        <div class="user-block__links">
+          <a class="backup-link" href="#">Забыли пароль?</a>
+          <a class="backup-link" href="#">Регистрация</a>
+        </div>
+      </form>
+    </div>
+  </li>
+  <li class="user-menu__item header-basket--full">
+    <a class="user-menu__link header-basket__link" href="">
+      <span class="visually-hidden">Корзина</span>
+      <span class="count-products">2</span> товара
+    </a>
+    <div class="header-basket__content header-basket__content--full">
+      <p>Корзина на доработке</p>
+    </div>
+  </li>
+</ul>
+
+
 </header>
 
 <main class="page__main main-creamy">
