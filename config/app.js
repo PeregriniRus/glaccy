@@ -24,27 +24,27 @@ module.exports = {
       },
       {
         cleanupNumericValues: {
-          floatPrecision: 2
+          floatPrecision: 3
         }
       },
       {
         convertPathData: {
-          floatPrecision: 2
+          floatPrecision: 3
         }
       },
       {
         transformsWithOnePath: {
-          floatPrecision: 2
+          floatPrecision: 3
         }
       },
       {
         convertTransform: {
-          floatPrecision: 2
+          floatPrecision: 3
         }
       },
       {
         cleanupListOfValues: {
-          floatPrecision: 2
+          floatPrecision: 3
         }
       }
     ]

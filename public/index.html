@@ -13,11 +13,13 @@
 <header class="page-header">
 <nav class="page-header__nav nav">
   <a class="nav__logo logo" href="index.html">
-    <img class="logo_img" src="img/logo-glaccy.svg" width="137" height="56" alt="Логотип интернет магазина Глейси.">
+    <img class="logo_img" src="images/icon/logo-glaccy.svg" width="137" height="56" alt="Логотип интернет магазина Глейси.">
   </a>
   <ul class="nav__menu menu">
     <li class="menu__item">
-      <a class="menu__link" href="#">Каталог</a>
+      <a class="menu__link link link__size--m link__view--primary" href="creamy.html">
+        <span class="text__type--main-3 text__color--primary">Каталог</span>
+      </a>
       <ul class="submenu">
         <li class="submenu__item">
           <a class="submenu__link" href="#">Новинки</a>
@@ -37,10 +39,14 @@
       </ul>
     </li>
     <li class="menu__item">
-      <a class="menu__link" href="#">Доставка и оплата</a>
+      <a class="menu__link link link__size--m link__view--primary" href="#">
+        <span class="text__type--main-3 text__color--primary">Доставка и оплата</span>
+      </a>
     </li>
     <li class="menu__item">
-      <a class="menu__link" href="#">О компании</a>
+      <a class="menu__link link link__size--m link__view--primary" href="#">
+        <span class="text__type--main-3 text__color--primary">О компании</span>
+      </a>
     </li>
   </ul>
 </nav>
@@ -51,13 +57,21 @@
   </address>
 <ul class="user-menu">
   <li class="user-menu__item header-search">
-    <a class="user-menu__link header-search__link"><span class="visually-hidden">Поиск по сайту</span></a>
-    <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
-      <input class="header-search__input" name="header-search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту.">
-    </form>
+    <a class="user-menu__link header-search__link link link__view link__size--s--only-icon" href="#">
+      <div class="cart-full icon__name--search icon__view--primary"></div>
+      <span class="visually-hidden">Поиск по сайту</span>
+    </a>
+    <div class="wrapper--header-search__form">
+      <form class="header-search__form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+        <input class="header-search__input" name="header-search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту.">
+      </form>
+    </div>
   </li>
   <li class="user-menu__item header-login">
-    <a class="user-menu__link header-login__link" href="#">Вход</a>
+    <a class="user-menu__link header-login__link link link__view link__size--s link__has-icon--icon-left" href="#">
+      <div class="cart-full icon__name--log-in icon__view--primary"></div>
+      <span class="text__type--sublabel text__color--primary">Вход</span>
+    </a>
     <div class="wrapper--header-login__form">
       <form class="user-block" action="https://echo.htmlacademy.ru" method="get" target="_blank">
         <h3 class="user-block__title">Личный кабинет</h3>
@@ -74,9 +88,10 @@
     </div>
   </li>
   <li class="user-menu__item header-basket--empty">
-    <a class="user-menu__link header-basket__link" href="">
-      <span class="visually-hidden">Корзина</span>
-      Пусто
+    <a class="user-menu__link header-basket__link link link__view link__size--s link__has-icon--icon-left" href="#">
+      <div class="icon icon__name--cart icon__view--primary"></div>
+<!--      <span class="visually-hidden">Корзина</span>-->
+      <span class="text__type--sublabel text__color--primary">Пусто</span>
     </a>
     <div class="header-basket__content header-basket__content--empty">
       <p>Ваша корзина пока пуста</p>
@@ -173,27 +188,25 @@
 
     <ul class="social">
   <li class="social__item">
-    <a class="social__link"
-       href="#">
-      <div class="container-link container-link--twitter"></div>
+    <a class="social__link link link__view--secondary" href="#">
+      <div class="icon__size--l icon__name--instagram icon__view--primary-inverse icon__view--border"></div>
       <p class="visually-hidden">Перейти в ВКонтакте.</p>
     </a>
   </li>
   <li class="social__item">
-    <a class="social__link"
-       href="#">
-      <div class="container-link container-link--facebook"></div>
+    <a class="social__link link link__view--secondary" href="#">
+      <div class="icon__size--l icon__name--facebook icon__view--primary-inverse icon__view--border"></div>
       <p class="visually-hidden">Перейти в <span lang="en">Facebook</span>.</p>
     </a>
   </li>
   <li class="social__item">
-    <a class="social__link"
-       href="#">
-      <div class="container-link container-link--instagram"></div>
+    <a class="social__link link link__view--secondary" href="#">
+      <div class="icon__size--l icon__name--instagram icon__view--primary-inverse icon__view--border"></div>
       <p class="visually-hidden">Перейти в <span lang="en">Instagram</span>.</p>
     </a>
   </li>
 </ul>
+<!--icon&#45;&#45;social icon__name&#45;&#45;instagram-->
 
   </footer>
 </section>
@@ -386,27 +399,25 @@
 <footer class="page-footer">
   <ul class="social">
   <li class="social__item">
-    <a class="social__link"
-       href="#">
-      <div class="container-link container-link--twitter"></div>
+    <a class="social__link link link__view--secondary" href="#">
+      <div class="icon__size--l icon__name--instagram icon__view--primary-inverse icon__view--border"></div>
       <p class="visually-hidden">Перейти в ВКонтакте.</p>
     </a>
   </li>
   <li class="social__item">
-    <a class="social__link"
-       href="#">
-      <div class="container-link container-link--facebook"></div>
+    <a class="social__link link link__view--secondary" href="#">
+      <div class="icon__size--l icon__name--facebook icon__view--primary-inverse icon__view--border"></div>
       <p class="visually-hidden">Перейти в <span lang="en">Facebook</span>.</p>
     </a>
   </li>
   <li class="social__item">
-    <a class="social__link"
-       href="#">
-      <div class="container-link container-link--instagram"></div>
+    <a class="social__link link link__view--secondary" href="#">
+      <div class="icon__size--l icon__name--instagram icon__view--primary-inverse icon__view--border"></div>
       <p class="visually-hidden">Перейти в <span lang="en">Instagram</span>.</p>
     </a>
   </li>
 </ul>
+<!--icon&#45;&#45;social icon__name&#45;&#45;instagram-->
 
   <ul class="menu-footer">
     <li class="menu-footer__item"><a class="menu-footer__link">Для поставщиков</a></li>
