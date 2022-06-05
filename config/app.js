@@ -49,5 +49,5 @@ module.exports = {
       }
     ]
   },
-  jpegOptions: {quality: 80, progressive: true}
+  jpegOptions: {quality: 85, progressive: true}
 }
