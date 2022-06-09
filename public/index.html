@@ -213,94 +213,157 @@
   </footer>
 </section>
 
-  <section class="offers">
-  <h2 class="offers__title">Заказывайте мороженое и получайте подарки!</h2>
-  <ul class="offers__list">
-    <li class="offers__item offer">
-      <h3 class="offer__title">Малинка даром!</h3>
-      <p class="offer__text">
-        При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
-      </p>
-      <a class="offer__link"
-         href="">Хочу подарок</a>
-    </li>
-    <li class="offers__item offer">
-      <h3 class="offer__title"></h3>
-      <p class="offer__text">
-        При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
-      </p>
-      <a class="offer__link"
-         href="">Хочу подарок</a>
-    </li>
-  </ul>
-</section>
-
-  <section class="popular-products">
-  <h2 class="popular-products__title">Попробуйте самые популярные вкусы нашего мороженого</h2>
-  <ul class="popular-products__list">
-    <li class="popular-products__item item">
-      <img class="item__picture"
-           src=""
-           alt="">
-      <h3 class="item__title"></h3>
-      <p class="item__text"></p>
-      <div class="wrapper-price-basket">
-        <span class="item__price"></span>
-        <button class="item__basket"></button>
+  <section class="main-index__offers offers">
+  <h2 class="offers__title text__type--heading-2 text__color--accent">Заказывайте мороженое<br> и получайте подарки!</h2>
+  <ul class="offers__list offer-list-container">
+    <li class="offer-list-container__item">
+      <div class="offer">
+        <div class="wrapper--main-offer">
+          <h3 class="offer__title text__type--heading-3 text__color--accent">Малинка даром!</h3>
+          <p class="offer__text text__type--main-2 text__color--accent">
+            При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.
+          </p>
+          <a class="offer__link button button__size--l button__view--primary text__type--main-3-bold text__color--accent " href="">Хочу подарок</a>
+        </div>
+        <img class="offer__img img-raspberry" width="181px" height="240px" src="../images/img/raspberry.png" alt="">
       </div>
     </li>
-    <li class="popular-products__item item">
-      <img class="item__picture"
-           src=""
-           alt="">
-      <h3 class="item__title"></h3>
-      <p class="item__text"></p>
-      <div class="wrapper-price-basket">
-        <span class="item__price"></span>
-        <button class="item__basket"></button>
-      </div>
-    </li>
-    <li class="popular-products__item item">
-      <img class="item__picture"
-           src=""
-           alt="">
-      <h3 class="item__title"></h3>
-      <p class="item__text"></p>
-      <div class="wrapper-price-basket">
-        <span class="item__price"></span>
-        <button class="item__basket"></button>
-      </div>
-    </li>
-    <li class="popular-products__item item">
-      <img class="item__img"
-           src=""
-           alt="">
-      <h3 class="item__title"></h3>
-      <p class="item__text"></p>
-      <div class="wrapper-price-basket">
-        <span class="item__price"></span>
-        <button class="item__basket"></button>
+    <li class="offer-list-container__item">
+      <div class="offer">
+        <div class="wrapper--main-offer">
+          <h3 class="offer__title text__type--heading-3 text__color--accent">Маршмеллоу даром!</h3>
+          <p class="offer__text text__type--main-2 text__color--accent">
+            При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.
+          </p>
+          <a class="offer__link button button__size--l button__view--primary text__type--main-3-bold text__color--accent " href="">Хочу подарок</a>
+        </div>
+        <img class="offer__img img-marshmallow" width="232px" height="248px" src="../images/img/marshmallow.png" alt="">
       </div>
     </li>
   </ul>
 </section>
 
-  <section class="about-company">
+  <section class="main-index__popular-products popular-products">
+  <h2 class="popular-products__title text__type--heading-2 text__color--accent">Попробуйте самые популярные<br> вкусы нашего мороженого</h2>
+    <ul class="popular-products__card-list-container card-list-container">
+      <li class="card-list-container__item">
+        <div class="card-item">
+          <a class="card-item__link link" href="#">
+            <img class="card-item__img"
+                 src="/images/img/foto.jpg"
+                 alt=""
+                 width="168px"
+                 height="168px"
+                 aria-labelledby="title_1">
+          </a>
+          <div class="card-item__wrapper--title-description">
+            <h3 class="card-item__title text__type--heading-4 text__color--accent" id="title_1">Малинка</h3>
+            <p class="card-item__description text__type--main-2 text__color--primary">Сливочное мороженое<br> с малиновым джемом</p>
+          </div>
+          <div class="card-item__wrapper--price-button">
+            <span class="card-item__price text__type--heading-4">310 ₽/кг</span>
+            <button class="card-item__button button button__size--s button-cart__view" type="button">
+              <div class="icon__size--s icon__name--cart icon__view--primary-inverse">
+              </div>
+              <span class="visually-hidden">Добавить в избранное.</span>
+            </button>
+          </div>
+        </div>
+      </li>
+
+      <li class="card-list-container__item">
+        <div class="card-item">
+          <a class="card-item__link link" href="#">
+            <img class="card-item__img"
+                 src="/images/img/foto-1.jpg"
+                 alt=""
+                 width="168px"
+                 height="168px"
+                 aria-labelledby="title_2">
+          </a>
+          <div class="card-item__wrapper--title-description">
+            <h3 class="card-item__title text__type--heading-4 text__color--accent" id="title_2">Фисташка</h3>
+            <p class="card-item__description text__type--main-2 text__color--primary">Фисташковый пломбир<br> с кусочками шоколада</p>
+          </div>
+          <div class="card-item__wrapper--price-button">
+            <span class="card-item__price text__type--heading-4">340 ₽/кг</span>
+            <button class="card-item__button button button__size--s button-cart__view" type="button">
+              <div class="icon__size--s icon__name--cart icon__view--primary-inverse">
+              </div>
+              <span class="visually-hidden">Добавить в избранное.</span>
+            </button>
+          </div>
+        </div>
+      </li>
+
+      <li class="card-list-container__item">
+        <div class="card-item">
+          <a class="card-item__link link" href="#">
+            <img class="card-item__img"
+                 src="/images/img/foto-2.jpg"
+                 alt=""
+                 width="168px"
+                 height="168px"
+                 aria-labelledby="title_3">
+          </a>
+          <div class="card-item__wrapper--title-description">
+            <h3 class="card-item__title text__type--heading-4 text__color--accent" id="title_3">Черника</h3>
+            <p class="card-item__description text__type--main-2 text__color--primary">Крем-брюле<br> с черничным джемом</p>
+          </div>
+          <div class="card-item__wrapper--price-button">
+            <span class="card-item__price text__type--heading-4">330 ₽/кг</span>
+            <button class="card-item__button button button__size--s button-cart__view" type="button">
+              <div class="icon__size--s icon__name--cart icon__view--primary-inverse">
+              </div>
+              <span class="visually-hidden">Добавить в избранное.</span>
+            </button>
+          </div>
+        </div>
+      </li>
+
+      <li class="card-list-container__item">
+        <div class="card-item">
+          <a class="card-item__link link" href="#">
+            <img class="card-item__img"
+                 src="/images/img/foto-3.jpg"
+                 alt=""
+                 width="168px"
+                 height="168px"
+                 aria-labelledby="title_4">
+          </a>
+          <div class="card-item__wrapper--title-description">
+            <h3 class="card-item__title text__type--heading-4 text__color--accent" id="title_4">Бабл-гам</h3>
+            <p class="card-item__description text__type--main-2 text__color--primary">Ванильный пломбир<br> со сладкой посыпкой</p>
+          </div>
+          <div class="card-item__wrapper--price-button">
+            <span class="card-item__price text__type--heading-4">320 ₽/кг</span>
+            <button class="card-item__button button button__size--s button-cart__view" type="button">
+              <div class="icon__size--s icon__name--cart icon__view--primary-inverse">
+              </div>
+              <span class="visually-hidden">Добавить в избранное.</span>
+            </button>
+          </div>
+        </div>
+      </li>
+  </ul>
+</section>
+
+  <section class="main-index__about-company about-company">
+  <h2 class="visually-hidden">Несколько слов о магазине Глэйси</h2>
   <div class="container--about-company">
-    <p class="about-company__description">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
+    <p class="about-company__description text__type--heading-2 text__color--accent">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
     <ul class="about-company__features">
-      <li class="features__item">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных
-                                 временем технологий.
+      <li class="features__item icon__name--ice-cream text__type--main-2 text__color--primary">
+        Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.
       </li>
-      <li class="features__item">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-                                 и добавки произведены из натурального сырья.
+      <li class="features__item icon__name--cow text__type--main-2 text__color--primary">
+        Закупка ингредиентов производится только<br> у проверенных фермерских хозяйств, с которыми<br> нас связывает долговременное сотрудничество.
       </li>
-      <li class="features__item">Закупка ингредиентов производится только
-                                 у проверенных фермерских хозяйств, с которыми
-                                 нас связывает долговременное сотрудничество.
+      <li class="features__item icon__name--leaf text__type--main-2 text__color--primary">
+        Для приготовления мороженого используются сливки<br> и молоко высочайшего качества. Все ингредиенты<br> и добавки произведены из натурального сырья.
       </li>
-      <li class="features__item">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить
-                                 превосходный вкус.
+      <li class="features__item icon__name--thermometer text__type--main-2 text__color--primary">
+        Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.
       </li>
     </ul>
   </div>
